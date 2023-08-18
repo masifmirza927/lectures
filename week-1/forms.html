@@ -6,18 +6,88 @@
     <title>html forms</title>
 </head>
 <body>
-<h1>HTML Forms</h1>
+
     
-    <form method="post" action="/search" enctype="multipart/form-data">
+    <form method="get" action="/search" enctype="multipart/form-data">
+        <input type="hidden" name="csrf" value="asfdasdfasdfasd2er234wsds" />
+        <h1>Signup Form</h1>
+         <div>
+            <div><label for="usernameId">Username</label></div>
+            <input type="text" name="username" value="" id="usernameId" autofocus="true" required/>
+         </div>   
 
-        <input type="text" name="q" value="" placeholder="username" />
-        <input type="file" name="image" value="" />
-        <input type="color" />
+         <div>
+            <div><label>Email</label></div>
+            <input type="email" name="email" value="abc@gmail.com" autofocus="true" readonly/>
+         </div>  
+         
+         <div>
+            <div><label>Password</label></div>
+            <input type="password" name="password" value=""  minlength="6" maxlength="12" required />
+         </div>  
 
-        <input type="password" name="password" value="" placeholder="password" />
+         <div>
+            <label>Select Profile Image</label>
+            <input type="file" name="image" accept="image/*" size="1048576"/>
+         </div>
 
-        <button>Submit</button>
+         <div>
+            <div><label>Date of Birth</label></div>
+            <input type="date" name="dob" />
+         </div>
 
+         <div>
+            <p>Select Gender</p>
+
+            <label for="maleId">Male</label>
+            <input type="radio" name="gender" value="male" id="maleId" />
+
+            <label>Female</label>
+            <input type="radio" name="gender" value="female" />
+
+         </div>
+
+         <div>
+            <p>Favourite Colors</p>
+
+            <label>
+                Red
+                <input type="checkbox" value="red" name="color" />
+            </label>
+
+            <label>
+                Blue
+                <input type="checkbox" value="blue" />
+            </label>
+            
+
+            <label>Green</label>
+            <input type="checkbox" value="green" />
+
+         </div>
+
+         <div>
+            <p>Select City</p>
+            <select name="city">
+                <option></option>
+                <option value="lodhran">Lodhran</option>
+                <option value="bahawalpur">Bahawalpur</option>
+                <option value="multan">Multan</option>
+            </select>
+         </div>
+
+         <div>
+            <p>Select Subjects</p>
+            <select name="subjects" multiple>
+                <option></option>
+                <option value="math">Mathematics</option>
+                <option value="eng">English</option>
+                <option value="phy">Phycis</option>
+            </select>
+         </div>
+
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
     </form>
 
 </body>
