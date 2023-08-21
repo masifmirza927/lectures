@@ -1,0 +1,39 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    padding: 10px;
+    margin: 10px;
+
+    /* margin: 10px 20px;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: red; */
+
+    border: 2px solid; 
+}
+a  {
+    border: 2px solid red;
+    padding: 5px;
+    margin: 10px;
+}
+.boxShadow {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 17%);
+    padding: 10px;
+}
+
+.box2 {
+    width: 200px;
+    height: 150px;
+    border: 3px solid red;
+    padding: 10px;
+    margin: 10px 20px;
+    overflow-y: scroll;
+}
