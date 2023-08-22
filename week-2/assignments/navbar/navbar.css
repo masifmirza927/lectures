@@ -1,0 +1,86 @@
+/*  https://ionic.io/ionicons  */
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #efefef;
+}
+nav {
+    height: 80px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0px #0000000a;
+}
+ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.nav-link {
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+.nav-link:hover {
+    background-color: #5174ef;
+    color: #fff;
+}
+
+.left, .middle, .right {
+    /* border: 1px solid red; */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.middle {
+    flex-grow: 2;
+}
+.right {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 20px;
+    color: #080874;
+    font-weight: 700;
+}
+.icons span {
+    margin: 0px 10px;
+}
+.status-online {
+    font-size: 14px;
+    background-color: #b3f5b3;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: green;
+}
+.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.small-img {
+    border: 1px solid red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+.small-img img {
+    width: 150%;
+}
