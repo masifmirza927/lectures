@@ -95,3 +95,80 @@ nav {
 .logos-wrapper > div > span:first-child {
     margin-right: 10px;
 }
+
+
+/* cards styles */
+
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.cards-wrapper .card {
+    background-color: #f5f9fc;
+    padding: 35px 25px;
+    width: 280px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.cards-wrapper .card:hover {
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 14px 15px 0px rgb(0 0 0 / 5%);
+    transform: scale(1.05);
+}
+
+.cards-wrapper .card:nth-child(1):hover .small-arrow > span {
+    background-color: #f0a501;
+    color: #fff;
+}
+.cards-wrapper .card:nth-child(2):hover .small-arrow > span {
+    background-color: #1da599;
+    color: #fff;
+}
+.cards-wrapper .card:nth-child(3):hover .small-arrow > span{
+    background-color: #3ba9fe;
+    color: #fff;
+}
+
+.icon-circle{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.icon-circle-yellow{
+    background-color: #f0aa11;
+}
+.icon-circle-green{
+    background-color: #1da599;
+}
+
+.icon-circle-blue{
+    background-color: #3ba9fe;
+}
+.card p {
+    font-size: 16px;
+    color: #383838;
+    margin-bottom: 15px;
+}
+.small-arrow {
+    display: flex;
+    justify-content: flex-end;
+}
+.small-arrow > span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    cursor: pointer;
+}
