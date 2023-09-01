@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+
+    font-size: 60px;
+ 
+
+    border: 10px solid rgb(99, 238, 6);
+    border-left-color: black;
+    padding: 10px;
+
+}
+h1 {
+    color: blue;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid red;
+} 
