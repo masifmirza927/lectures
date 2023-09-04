@@ -1,0 +1,15 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+.container { width: 700px; margin: 10px auto;}
+.item { background-color: darkgrey; border: 1px solid #000;}
+.container {
+    border: 1px solid red;
+    display: grid;
+    /* grid-template-rows: 100px 100px 10px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px; */
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+}
