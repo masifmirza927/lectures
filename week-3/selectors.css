@@ -1,0 +1,40 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+.container {
+    max-width: 800px;
+    border: 1px solid;
+    margin: 10px auto;
+}
+ul {
+    list-style: none;
+}
+
+/* a {
+    color: rgb(255, 72, 0);
+    text-decoration: none;
+}
+div > a {
+    border: 1px solid red;
+} */
+li + a {
+    border: 1px solid red;
+}
+
+a , h3, p {
+    color: green;
+}
+
+/* .row > a:nth-child(1),
+.row > a:nth-child(4) {
+    color: red;
+} */
+
+.row > a:nth-child(odd) {
+    color: red;
+}
+.row > a:hover {
+    color: blue;
+}
+
+
