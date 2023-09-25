@@ -1,0 +1,45 @@
+
+:root {
+    --red-color: #470808;
+    --text-light-gray: #a2a2a2;
+}
+.bg-body-tertiary {
+    background-color: black !important;
+}
+
+/* .nav-link.active {
+    color: red !important;
+}
+
+.navbar-nav .nav-link, .navbar-nav .nav-link.show {
+    color: #fff;
+} */
+
+.navbar-brand,
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show {
+    color: rgb(255, 255, 255) !important;
+}
+
+#header {
+    min-height: 100vh;
+    border: 1px solid;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+
+.heading1 {
+    color: var(--red-color)
+}
+
+.heading2 {
+    color: var(--red-color);
+    background-color: var(--text-light-gray);
+}
+
+.heading3 {
+    color: var(--red-color)
+}

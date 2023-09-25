@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    width: 280px;
+    height: 350px;
+    margin: 50px auto;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+.box::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    background-image: linear-gradient(100deg, #5454b1, #0398ed);
+    border-radius: 10px;
+    z-index: -2;
+    transition: all 0.5s;
+}
+.box::after {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    z-index: -1;
+}
+.box:hover::before {
+    transform: rotate(2deg) translateX(-7px) translateY(11px);
+}
+
+
+/** header style **/
+.header {
+    min-height: 500px;
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+    background-image: url('https://rainbowit.net/html/nuron/assets/images/bg/bg-image-24.jpg');
+}
+h1 {
+    color: red;;
+}
+.header::before {
+    content: "";
+    background-image: linear-gradient(to bottom, #00000000 0%, #181822 87%);
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.header::after {
+    content: "";
+    background-image: linear-gradient(to bottom, #00000000 0%, #181822 87%);
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

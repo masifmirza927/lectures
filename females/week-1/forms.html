@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    
+    <form action="login.php" method="get">
+        <input type="text" name="username" value="" placeholder="username" minlength="3" maxlength="12" required /> <br />
+        <input type="email" value="abc@gmail.com"  placeholder="email address" required readonly/>
+        <input type="password" name="password" value="" placeholder="password" /><br />
+        <input type="search" />
+        <select name="country" disabled>
+            <option>Pakistan</option>
+            <option>India</option>
+            <option>China</option>
+        </select>
+        <div>
+            <label>Gender</label><br />
+            <lable>
+                Male
+                <input type="radio" value="Male" name="gender" />
+            </lable>
+           
+            <lable>
+                Female
+                <input type="radio" value="Female" name="gender" />
+            </lable>
+        </div>
+
+        <div>
+            <label>Favourite Color</label> <br />
+            <label>
+                Red
+                <input type="checkbox" />
+            </label>
+            <label>
+                Blue
+                <input type="checkbox" />
+            </label>
+            <label>
+                Green
+                <input type="checkbox" />
+            </label>
+
+            <div>
+                <textarea rows="8" cols="20"></textarea>
+            </div>
+
+            <div>
+                <input type="file" /> <br />
+                <input type="datetime-local" />
+            </div>
+            
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>
