@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+<script>
+
+    const myarr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+     // return evens 
+     // return ods
+
+    const myarr2 = [1, "A", 2, "B", 3, "C"];
+    // return numbers
+    // reutnr string 
+
+    const myNums = [2, 3, 5];
+    // square roots
+
+    // challenge
+    const randomNums = [4, 9, 10, 35, 17, 13];
+        // findout large number from array
+
+    console.log(myarr)
+
+    
+   function sepratethreeSix (myarr) {
+    const newArr = [];
+    for( let i = 0; i < myarr.length; i++  ) {
+       
+       if(myarr[i] == 3 || myarr[i] == 6) {
+        newArr.push(myarr[i]);
+       }
+    }
+    return newArr;
+   }
+
+
+   const myNewArray = sepratethreeSix(myarr);
+
+   console.log(myNewArray);
+
+   const txt = "abc, xyz, ghy";
+
+   const exp = txt.split(",");
+
+</script>    
+</body>
+</html>

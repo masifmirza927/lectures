@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <style>
+        #myModal {
+            position: fixed;
+            background: #b3b3b3;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+        .modal-content {
+            background: #fff;
+            width: 60%;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 40px;
+            position: relative;
+            animation-name: topToBottom;
+            animation-duration: 0.8s;
+           
+        }
+        .close,
+        #myBtn {
+            cursor: pointer;
+        }
+        @keyframes topToBottom {
+            from {
+                top: -330px;
+                opacity: 0;
+            }
+            to {
+                top: 0px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="myBtn">Open Modal</button>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
+
+
+<script>
+    document.getElementById("myBtn").addEventListener("click", function () {
+        document.getElementById("myModal").style.display = "block";
+    });
+
+    document.querySelector(".close").addEventListener("click", function() {
+            document.getElementById("myModal").style.display = "none";
+        });
+
+    window.onclick = function(event) {
+        if(event.target.id == 'myModal') {
+            document.getElementById("myModal").style.display = "none";
+        }
+    }    
+
+</script>      
+</body>
+</html>

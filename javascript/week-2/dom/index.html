@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doom</title>
+</head>
+<body>
+    <input type="text" name="username" value="" id="inputField" />
+    <button id="box">Click Me</button>
+
+<script>
+    const box = document.getElementById("box");
+    const inputField = document.getElementById("inputField");
+
+    box.addEventListener("click", function(event) {
+        
+        const inputValue = inputField.value;
+
+        console.log("button clicked")
+        console.log(typeof inputValue);
+        console.log(event.type);
+        console.log(event.target);
+    
+
+    })
+
+</script>    
+</body>
+</html>
