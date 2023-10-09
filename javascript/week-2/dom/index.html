@@ -8,17 +8,19 @@
 <body>
     <input type="text" name="username" value="" id="inputField" />
     <button id="box">Click Me</button>
-
+    <div id="result">0</div>
 <script>
     const box = document.getElementById("box");
-    const inputField = document.getElementById("inputField");
+    const zxx = document.getElementById("inputField");
+    const result = document.getElementById("result");
 
     box.addEventListener("click", function(event) {
         
-        const inputValue = inputField.value;
+        const inputValue = zxx.value;
+        result.innerText = inputValue
 
         console.log("button clicked")
-        console.log(typeof inputValue);
+        console.log(inputValue);
         console.log(event.type);
         console.log(event.target);
     
