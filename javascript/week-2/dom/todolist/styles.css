@@ -1,0 +1,60 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#app {
+  width: 600px;
+  margin: 40px auto;
+  background-color: #efefef;
+  min-height: 300px;
+  padding: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 0px !important;
+}
+.delIcon {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+.todo {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+p {
+  margin-bottom: 0px !important;
+}
+
+
+@keyframes append-animate {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes delete-animation {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* animate new box */
+.new-box {
+  animation: append-animate .3s linear;
+}
+
+.remove-box {
+  animation: delete-animation .3s linear;;
+}
