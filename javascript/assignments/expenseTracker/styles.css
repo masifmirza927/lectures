@@ -1,0 +1,38 @@
+body {
+    background-color: #efefef;
+}
+#app {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000001c;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+span {
+    display: inline-block;
+}
+.header {
+    background: gold;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.header > div {
+    text-align: center;
+}
+.deleteBtn {
+    padding: 10px;
+    background-color: #efefef;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ff00006b;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
